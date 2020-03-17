@@ -1,3 +1,3 @@
-# a4-template
+# booklet-template
 
-A4 paper LaTex template
+Booklet LaTex template
