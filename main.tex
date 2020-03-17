@@ -1,0 +1,53 @@
+\documentclass[runningheads]{llncs}
+\usepackage{xeCJK}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{interval}
+\usepackage{amsmath, amssymb}
+\usepackage{cuted, tcolorbox}
+\usepackage{tikz}
+\usepackage[ruled,vlined]{algorithm2e}
+\usepackage{algpseudocode}
+\usepackage[normalem]{ulem}
+
+\makeatletter
+\newcommand{\printfnsymbol}[1]{%
+  \textsuperscript{\@fnsymbol{#1}}%
+}
+\makeatother
+
+\newcommand{\TODO}[1]{\textcolor{red}{TODO: #1}}
+
+% blue comment
+\newcommand\mycommfont[1]{\footnotesize\ttfamily\textcolor{blue}{#1}}
+\SetCommentSty{mycommfont}
+% blue triangle
+\SetKwComment{Comment}{\color{blue} $\triangleright$\ }{}
+
+\begin{document}
+
+\title{big title}
+\titlerunning{small title}
+
+\author{
+    HAOYU Lin\inst{1,2}
+}
+\authorrunning{LIN et al.}
+
+\institute{a \and b}
+
+\maketitle
+
+\begin{abstract}
+  \keywords{keyword1 \and keyword1.}
+\end{abstract}
+
+% \input{sections/1intro.tex}
+
+\bibliographystyle{splncs04}
+\bibliography{refs}
+
+\appendix
+\input{sections/999appendix.tex}
+
+\end{document}
