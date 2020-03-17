@@ -2,13 +2,39 @@
 \usepackage{xeCJK}
 \usepackage{graphicx}
 \usepackage{xcolor}
-\usepackage{interval}
-\usepackage{amsmath, amssymb}
 \usepackage{cuted, tcolorbox}
+% \usepackage{color}
+\usepackage{interval}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath, amssymb}
+\usepackage{csquotes}
 \usepackage{tikz}
 \usepackage[ruled,vlined]{algorithm2e}
 \usepackage{algpseudocode}
-\usepackage[normalem]{ulem}
+
+\usepackage{listings}
+\lstdefinestyle{mono}{
+  basicstyle=\small\ttfamily,
+  columns=flexible,
+  breaklines=true
+}
+
+\usepackage{mathtools}
+\DeclarePairedDelimiter{\ceil}{\lceil}{\rceil}
+\DeclarePairedDelimiter{\floor}{\lfloor}{\rfloor}
+
+% date format
+\usepackage[ddmmyyyy]{datetime}
+\renewcommand{\dateseparator}{/}
+
+\usepackage{tabularx}
+\newcommand{\specialcell}[2][c]{%
+  \footnotesize{\begin{tabular}[#1]{@{}c@{}}#2\end{tabular}}}
+
+\newcommand{\red}[1]{\textcolor{red}{#1}}
+\newcommand{\blue}[1]{\textcolor{blue}{#1}}
+
+\usepackage[inline]{enumitem}
 
 \makeatletter
 \newcommand{\printfnsymbol}[1]{%
@@ -26,23 +52,26 @@
 
 \begin{document}
 
-\title{big title}
+\title{\vspace*{\fill}Big\\Title\vspace*{\fill}}
 \titlerunning{small title}
 
-\author{
-    HAOYU Lin\inst{1,2}
-}
+\author{Haoyu LIN}
 \authorrunning{LIN et al.}
 
 \institute{a \and b}
 
-\maketitle
+
+
+\begin{titlepage}
+  \maketitle
+  \thispagestyle{empty}
+\end{titlepage}
 
 \begin{abstract}
   \keywords{keyword1 \and keyword1.}
 \end{abstract}
 
-% \input{sections/1intro.tex}
+\input{sections/1intro.tex}
 
 \bibliographystyle{splncs04}
 \bibliography{refs}
