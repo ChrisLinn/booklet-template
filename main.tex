@@ -19,7 +19,10 @@
 \lstdefinestyle{mono}{
   basicstyle=\small\ttfamily,
   columns=flexible,
-  breaklines=true
+  breaklines=true,
+  backgroundcolor=\color{lightgray!20},
+  % numbers=left,
+  % stepnumber=1,
 }
 
 \usepackage{mathtools}
@@ -47,6 +50,9 @@
 
 \newcommand{\TODO}[1]{\textcolor{red}{TODO: #1}}
 
+\newcommand{\terminal}[1]{\noindent\texttt{> #1}}
+\newcommand{\newl}{\noindent\paragraph{}}
+
 % blue comment
 \newcommand\mycommfont[1]{\footnotesize\ttfamily\textcolor{blue}{#1}}
 \SetCommentSty{mycommfont}
@@ -56,6 +62,10 @@
 \begin{document}
 
 \title{\vspace*{\fill}Big\\Title\vspace*{\fill}}
+% \title{Big: \textnormal{small}\\
+% \medskip
+% \textnormal{v 0.0.1}
+% }
 \titlerunning{small title}
 
 \author{Haoyu LIN\inst{1, 2}}
