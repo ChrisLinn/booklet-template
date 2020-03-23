@@ -1,5 +1,5 @@
 main:
-	latexmk -pvc -f -pdf main
+	latexmk -pvc -f -xelatex main
 
 clean:
 	latexmk -CA
